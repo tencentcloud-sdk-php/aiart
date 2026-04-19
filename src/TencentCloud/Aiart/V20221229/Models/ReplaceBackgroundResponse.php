@@ -20,28 +20,22 @@ use TencentCloud\Common\AbstractModel;
 /**
  * ReplaceBackground返回参数结构体
  *
- * @method string getResultImage() 获取根据入参 RspImgType 填入不同，返回不同的内容。
-如果传入 base64 则返回生成图 Base64 编码。
-如果传入 url 则返回的生成图 URL , 有效期1小时，请及时保存。
- * @method void setResultImage(string $ResultImage) 设置根据入参 RspImgType 填入不同，返回不同的内容。
-如果传入 base64 则返回生成图 Base64 编码。
-如果传入 url 则返回的生成图 URL , 有效期1小时，请及时保存。
- * @method string getMaskImage() 获取如果 MaskUrl 未传，则返回使用内置商品分割算法得到的 Mask 结果。
- * @method void setMaskImage(string $MaskImage) 设置如果 MaskUrl 未传，则返回使用内置商品分割算法得到的 Mask 结果。
+ * @method string getResultImage() 获取<p>根据入参 RspImgType 填入不同，返回不同的内容。<br>如果传入 base64 则返回生成图 Base64 编码。<br>如果传入 url 则返回的生成图 URL , 有效期1小时，请及时保存。</p>
+ * @method void setResultImage(string $ResultImage) 设置<p>根据入参 RspImgType 填入不同，返回不同的内容。<br>如果传入 base64 则返回生成图 Base64 编码。<br>如果传入 url 则返回的生成图 URL , 有效期1小时，请及时保存。</p>
+ * @method string getMaskImage() 获取<p>如果 MaskUrl 未传，则返回使用内置商品分割算法得到的 Mask 结果。</p>
+ * @method void setMaskImage(string $MaskImage) 设置<p>如果 MaskUrl 未传，则返回使用内置商品分割算法得到的 Mask 结果。</p>
  * @method string getRequestId() 获取唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
  * @method void setRequestId(string $RequestId) 设置唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
  */
 class ReplaceBackgroundResponse extends AbstractModel
 {
     /**
-     * @var string 根据入参 RspImgType 填入不同，返回不同的内容。
-如果传入 base64 则返回生成图 Base64 编码。
-如果传入 url 则返回的生成图 URL , 有效期1小时，请及时保存。
+     * @var string <p>根据入参 RspImgType 填入不同，返回不同的内容。<br>如果传入 base64 则返回生成图 Base64 编码。<br>如果传入 url 则返回的生成图 URL , 有效期1小时，请及时保存。</p>
      */
     public $ResultImage;
 
     /**
-     * @var string 如果 MaskUrl 未传，则返回使用内置商品分割算法得到的 Mask 结果。
+     * @var string <p>如果 MaskUrl 未传，则返回使用内置商品分割算法得到的 Mask 结果。</p>
      */
     public $MaskImage;
 
@@ -51,10 +45,8 @@ class ReplaceBackgroundResponse extends AbstractModel
     public $RequestId;
 
     /**
-     * @param string $ResultImage 根据入参 RspImgType 填入不同，返回不同的内容。
-如果传入 base64 则返回生成图 Base64 编码。
-如果传入 url 则返回的生成图 URL , 有效期1小时，请及时保存。
-     * @param string $MaskImage 如果 MaskUrl 未传，则返回使用内置商品分割算法得到的 Mask 结果。
+     * @param string $ResultImage <p>根据入参 RspImgType 填入不同，返回不同的内容。<br>如果传入 base64 则返回生成图 Base64 编码。<br>如果传入 url 则返回的生成图 URL , 有效期1小时，请及时保存。</p>
+     * @param string $MaskImage <p>如果 MaskUrl 未传，则返回使用内置商品分割算法得到的 Mask 结果。</p>
      * @param string $RequestId 唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
      */
     function __construct()
